@@ -3,13 +3,10 @@ library(xml2)
 
 fitbit_endpoint <- oauth_endpoint(
   request = "https://api.fitbit.com/oauth2/token",
-  authorize = "http://localhost:1410/",
   authorize = "http://localhost:1410/", #loopback
   access = "https://api.fitbit.com/oauth2/token")
 myapp <- oauth_app(
   appname = "data_access",
-  key = key, 
-  secret = token)
   key = key, #my consumer key
   secret = token) #my secret token
 
