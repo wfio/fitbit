@@ -17,6 +17,6 @@ scope <- c("activity")  # See dev.fitbit.com/docs/oauth2/#scope
 fitbit_token <- oauth2.0_token(fitbit_endpoint, myapp,
                                scope = scope, use_basic_auth = TRUE)
 # 3. Make API requests
-resp <- GET(url = "https://api.fitbit.com/1/user/-/activities/steps/date/today/1m.json", 
+resp <- GET(url = "activities URL string", 
             config(token = fitbit_token))
 content(resp)
